@@ -40,6 +40,10 @@
   color: #28a745;
   margin: 20px 0;
 }
+.computer_won{
+  color: #990000;
+  margin: 20px 0;
+}
 
 .computer_option {
   background-color: #000;
