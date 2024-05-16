@@ -14,9 +14,12 @@ p{
   font-weight: 400;
   font-style: normal;
 }
-.calculator{
+.flex {
   display: flex;
-  justify-content: center;
+}
+.calculator{
+  justify-content: space-evenly;
+  align-items: center;
   margin-top: 50px;
 }
 input{
