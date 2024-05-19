@@ -50,8 +50,8 @@ button {
   margin-top: 170px;
 }
 
-@media (width: 300px) {
+@media screen and (max-width: 300px) {
   .startGameButton {
-    margin-bottom: 100px;
+    margin: 10px 0;
   }
 }
