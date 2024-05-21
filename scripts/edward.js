@@ -1,14 +1,11 @@
-const calculator = document.querySelector(".search-button-wrapper input");
-const reButton = document.querySelector(".resultButton");
+const calculatorInput = document.querySelector(".search-button-wrapper input");
+const resultButton = document.querySelector(".resultButton");
 const result = document.querySelector(".result");
-let variuble = calculator.value;
-// let hoursResult = Math.floor(variuble/60);
+let variable = calculatorInput.value;
+// let hoursResult = Math.floor(variable/60);
 // let minuteResult = Math.floor(hoursResult/60);
 
-function calculation() {
-    Math.floor(variuble/60);
-    Math.floor(hoursResult/60);
-    
+function convertTime() {
+    result.textContent =  Math.floor(variable/60) + ':' + (hoursResult %60);
 }
-
-reButton.addEventListener('click', calculation);
+resultButton.addEventListener('click', convertTime);
