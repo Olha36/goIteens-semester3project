@@ -18,9 +18,9 @@ p{
   align-items: center;
   margin-top: 50px;
 }
-input{
+#input{
   width: 115px;
-  height: 35px;
+  height: 33px;
   border: none;
   background-color:#D7D7D7;
   border-top-left-radius: 20px;
@@ -37,4 +37,50 @@ input{
 img{
   padding-top: 10px;
   padding-left: 10px;
+}
+
+
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.send-email input{
+  width: 350px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  background-color: #D7D7D7;
+}
+.send-email button{
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 107px;
+  height: 35px;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-left: 50px;
+}
+.send-email p{
+  margin-top: 20px;
+  font-size: 6px;
 }
