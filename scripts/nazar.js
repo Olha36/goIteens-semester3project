@@ -24,3 +24,17 @@ function cactusMovement() {
     console.log(cactusMovement);
 }
 cactusMovement()
+
+function getCoordinates() {
+    const dinoCoordinates = dinoImg.getBoundingClientRect()
+    const cactusCoordinates = cactusImg.getBoundingClientRect()
+    console.log(dinoCoordinates);
+    console.log(cactusCoordinates);
+}
+getCoordinates()
+
+const isIntersectionX = cactusImg.left < dinoImg.right
+console.log(isIntersectionX);
+
+const isIntersectionY = cactusImg.top < dinoImg.bottom
+console.log(isIntersectionY);
