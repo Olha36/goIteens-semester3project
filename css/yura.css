@@ -26,6 +26,8 @@
   line-height: 19.5px;
   padding-bottom: 30px;
 }
-.football-img {
-  padding-left: 30px;
+@media screen and (max-width: 725px) {
+  .yura {
+    width: 380px;
+  }
 }
