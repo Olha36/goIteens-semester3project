@@ -9,8 +9,8 @@ function getClickCoordinates(event) {
     console.log(newPositionLeft);
     let newPositionTop = event.clientY - footballField.getBoundingClientRect().top;
     console.log(newPositionTop);
-    ballImg.style.top = newPositionTop - 25 + 'px';
-    ballImg.style.left = newPositionLeft - 25 + 'px';
+    ballImg.style.top = newPositionTop - 10 + 'px';
+    ballImg.style.left = newPositionLeft - 10 + 'px';
     ballImg.style.transition = 'transform 0.5s ease'
 }
 footballField.addEventListener('click', getClickCoordinates)
