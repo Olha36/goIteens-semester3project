@@ -15,10 +15,14 @@ function stopGame() {
 }
 stopGame()
 
-function dinoJump() {
-    console.log(dinoJump);
-}
-dinoJump()
+// function dinoJump(e) {
+//     console.log(e.key);
+//     let key = e.key
+//     if(key === 'Space' || key === '') {
+//         dinoJump
+//     }
+// }
+// dinoJump()
 
 function cactusMovement() {
     console.log(cactusMovement);
