@@ -27,6 +27,13 @@
 .nav-bar {
   justify-content: space-evenly;
 }
+.switcher {
+  width: 40px;
+  height: 20px;
+  border-radius: 11px 11px;
+  border: 0.5px solid #000000;
+  background-color: #7A7A7A;
+}
 .football-field {
   position: relative;
   align-items: center;
