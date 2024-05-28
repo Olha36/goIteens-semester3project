@@ -1,37 +1,18 @@
 const imgOfStone = document.querySelector('.stone')
-
 const imgOfScissors = document.querySelector('.scissors')
-
 const imgOfPaper = document.querySelector('.paper')
- 
 const computer_option = document.querySelector('.computer_option')
-
-
-
-const stoneKnivesPapergame = ["камінь", "ножиці", "папір"]
-
-
 const computer = document.querySelector('.computer')
- let computer1 = 0;
-
-
 const player = document.querySelector('.player')
-let player1 = 0;
 
 
-
-
-
-
-
-
-
-
-
+let computerPoint = 0;
+let userPoint = 0;
 
 function getComputerChoice() {
-    const randomIndex = Math.floor(Math.random() * stoneKnivesPapergame.length);
-    return stoneKnivesPapergame[randomIndex];
+    const stoneKnivesPapergame = ["камінь", "ножиці", "папір"]
+    const randomIndex = Math.floor(Math.random() * stoneScissorsPapergame.length);
+    return stoneScissorsPapergame[randomIndex];
 }
 
 function getPlayerChoice(choice) {
@@ -46,20 +27,20 @@ function showComputerChoice(choice) {
 
 function playGame(playerChoice) {
     const computerChoice = getComputerChoice();
-    showComputerChoice(computerChoice);
-
+    // showComputerChoice(computerChoice);
+    console.log(computerChoise)
     if (playerChoice === computerChoice) {
-        displayMessage('Нічия!');
+        console.log('Нічия!');
     } else if (
         (playerChoice === "камінь" && computerChoice === "ножиці") ||
         (playerChoice === "ножиці" && computerChoice === "папір") ||
         (playerChoice === "папір" && computerChoice === "камінь")
     ) {
-        displayMessage('Гравець виграв!');
+        console.log('Ви виграли раунд!');
         player1++;
         updatePlayerScore();
     } else {
-        displayMessage('Комп виграв!');
+        console.log('Комп’ютер виграв раунд!');
         computer1++;
         updateComputerScore();
     }
