@@ -11,8 +11,6 @@
   align-items: center;
 }
 .coding-text {
-  width: 44px;
-  height: 15px;
   font-size: 12px;
   line-height: 14.63px;
   text-align: left;
@@ -20,12 +18,19 @@
 }
 .magic-text {
   font-family: "Sacramento", cursive;
-  width: 30px;
-  height: 18px;
   line-height: 17px;
 }
 .nav-bar {
   justify-content: space-evenly;
+}
+.link {
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  line-height: 14.63px;
+  text-align: left;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-decoration: none;
+  color: #000000;
 }
 .switcher {
   width: 40px;
@@ -33,6 +38,21 @@
   border-radius: 11px 11px;
   border: 0.5px solid #000000;
   background-color: #7A7A7A;
+}
+.switcher-button {
+  display: inline-block;
+  width: 20.5px;
+  height: 20px;
+  border-radius: 11px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.switcher-button img {
+  width: 14px;
+  height: 15px;
 }
 .football-field {
   position: relative;
@@ -65,8 +85,29 @@
   width: 50px;
   height: 50px;
 }
+.move {
+  animation: move 3s linear infinite;
+}
 @media screen and (max-width: 725px) {
   .football-field {
     width: 360px;
+  }
+}
+
+@keyframes move {
+  0% {
+    left: 0%;
+  }
+  25% {
+    left: 25%;
+  }
+  50% {
+    left: 50%;
+  }
+  75% {
+    left: 75%;
+  }
+  100% {
+    left: 100%;
   }
 }

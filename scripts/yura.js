@@ -12,5 +12,6 @@ function getClickCoordinates(event) {
     ballImg.style.top = newPositionTop - 10 + 'px';
     ballImg.style.left = newPositionLeft - 10 + 'px';
     ballImg.style.transition = 'transform 0.5s ease'
+    // ballImg.classList.add('move')
 }
 footballField.addEventListener('click', getClickCoordinates)
