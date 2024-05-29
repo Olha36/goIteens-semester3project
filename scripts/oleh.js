@@ -10,8 +10,8 @@ function getRandomNumber() {
  
 };
 
-// function getCheckNumbers() {
-// const inputWellYou = numberGuess.value
-// console.log(inputWellYou)
-// }
-// getCheckNumbers()
+function getCheckNumbers() {
+const inputWellYou = numberGuess.value
+console.log(inputWellYou)
+}
+getCheckNumbers()
