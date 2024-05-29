@@ -1,16 +1,17 @@
 const buttonPlayAgain = document.querySelector(".button");
 console.log(buttonPlayAgain)
 
-const numberGess = document.querySelector(".number");
-console.log(numberGess)
+const numberGuess = document.querySelector(".number");
+console.log(numberGuess)
+
 
 function getRandomNumber() {
-    return Math.round(Math.random() * (10 - 1) + 1)
-}
-getRandomNumber()
+    return Math.round(Math.random() * (100 - 1) + 1);
+ 
+};
 
-function getCheckNumbers() {
-const inputWellYou = numberGess.value
-console.log(inputWellYou)
-}
-getCheckNumbers()
+// function getCheckNumbers() {
+// const inputWellYou = numberGuess.value
+// console.log(inputWellYou)
+// }
+// getCheckNumbers()
