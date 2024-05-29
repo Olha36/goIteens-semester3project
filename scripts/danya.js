@@ -27,7 +27,7 @@ function showComputerChoice(choice) {
 
 function playGame(playerChoice) {
     const computerChoice = getComputerChoice();
-    // showComputerChoice(computerChoice);
+    showComputerChoice(computerChoice);
     console.log(computerChoise)
     if (playerChoice === computerChoice) {
         console.log('Нічия!');
