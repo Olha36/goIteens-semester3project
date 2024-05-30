@@ -65,6 +65,9 @@
   width: 16px;
   height: 15px;
 }
+.moon {
+  display: none;
+}
 .welcome-user-text {
   margin-left: 15px;
 }
