@@ -29,28 +29,30 @@ button {
 }
 
 .dinoImage {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: relative;
   background-image: url('../img-nazar/dinoimg.png');
-  background-size: 50px 50px;
+  background-size: 30px 30px;
   top: 51px;
   left: 600px;
+  border: 1px solid red;
   /* animation: jump 0.5s linear infinite; */
 }
 
-.dinoRunning {
+.dinoJump {
   animation: jump 0.5s linear infinite;
 }
 
 .cactusImage {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   position: relative;
-  top: 1px;
+  top: 20px;
   left: 900px;
   background-image: url('../img-nazar/cactus.png');
-  background-size: 50px 50px;
+  background-size: 30px 30px;
+  border: 1px solid blue;
 }
 
 .cactusRunning {
