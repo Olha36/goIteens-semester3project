@@ -28,6 +28,11 @@
 .nav-bar {
   justify-content: space-evenly;
 }
+.nav-bar img {
+  margin-right: 20px;
+  width: 10px;
+  height: 15px;
+}
 .link {
   font-family: Montserrat Alternates;
   font-size: 12px;
@@ -37,6 +42,9 @@
   text-decoration: none;
   color: #000000;
   margin-right: 25px;
+}
+.link:first-child {
+  margin-right: 5px;
 }
 .switcher {
   width: 40px;
@@ -90,6 +98,14 @@
 @media screen and (max-width: 725px) {
   .football-field {
     width: 360px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  .nav-bar:nth-child(1), .link {
+    margin-bottom: 10px;
   }
 }
 
