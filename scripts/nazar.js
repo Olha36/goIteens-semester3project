@@ -51,7 +51,6 @@ function getCoordinates() {
     const isIntersectionX = cactusCoordinates.left < dinoCoordinates.right
     const isIntersectionY = cactusCoordinates.top < dinoCoordinates.bottom
     if (isIntersectionX && isIntersectionY) {
-        debugger
         stopGame()
         console.log('Finished');
         result.textContent = 'Finished game';
@@ -59,5 +58,14 @@ function getCoordinates() {
 
 }
 
+function resetGame() {
+    stopGame()
+    startGame()
+    result.textContent()
+}
+resetGame()
+
+
 document.addEventListener('keydown', dinoJump)
 startGameButton.addEventListener('click', startGame)
+againGameButton.addEventListener('click', resetGame)
