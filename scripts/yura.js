@@ -49,7 +49,7 @@ footballField.addEventListener('click', getClickCoordinates)
 function darkModeForPage() {
     sun.style.display = 'none'
     moon.style.display = 'block'
-    paragraphs.classList.add('make-text-white')
+    body.classList.add('make-text-white')
     
     
 }
