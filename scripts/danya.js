@@ -23,7 +23,6 @@ function showComputerChoice(choice) {
 function updateScores() {
     playerScoreElement.textContent = `Ви: ${playerScore}`;
     computerScoreElement.textContent = `Комп'ютер: ${computerScore}`;
-
 }
 
 function playGame(playerChoice) {
@@ -39,13 +38,18 @@ function playGame(playerChoice) {
         playerScore++;
         victoryElement.textContent = 'Ви виграли раунд!';
         victoryElement.classList.add('win');
-        victoryElement.classList.remove('lose');
+        victoryElement.classList.remove('lose', 'draw');
+    } else if (playerChoice === computerChoice) {
+        console.log('Нічия!');
+        victoryElement.textContent = 'Нічия!';
+        victoryElement.classList.add('draw');
+        victoryElement.classList.remove('win', 'lose');
     } else {
         console.log('Комп’ютер виграв раунд!');
         computerScore++;
         victoryElement.textContent = 'Комп’ютер виграв раунд!';
         victoryElement.classList.add('lose');
-        victoryElement.classList.remove('win');
+        victoryElement.classList.remove('win', 'draw');
     }
 
     updateScores();

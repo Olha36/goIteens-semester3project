@@ -44,6 +44,11 @@
         color: red;
         margin-bottom: 50px;
     }
+    .draw{
+      margin-top: 50px;
+      color: #000;
+      margin-bottom: 50px;
+    }
 .computer_option {
   background-color: #000;
   color: #fff;
