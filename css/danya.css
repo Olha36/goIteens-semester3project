@@ -34,17 +34,16 @@
   margin-left: 75px;
   margin-bottom: 20px;
 }
-
-
-.you_won {
-  color: #28a745;
-  margin: 20px 0;
-}
-.computer_won{
-  color: #990000;
-  margin: 20px 0;
-}
-
+    .win {
+      margin-top: 50px;
+        color: green;
+        margin-bottom: 50px;
+    }
+    .lose {
+      margin-top: 50px;
+        color: red;
+        margin-bottom: 50px;
+    }
 .computer_option {
   background-color: #000;
   color: #fff;

@@ -24,31 +24,28 @@ function updateScores() {
     playerScoreElement.textContent = `Ви: ${playerScore}`;
     computerScoreElement.textContent = `Комп'ютер: ${computerScore}`;
 
-    if (playerScore > computerScore) {
-        victoryElement.textContent = 'Ви перемогли!';
-    } else if (playerScore < computerScore) {
-        victoryElement.textContent = 'Ви програли!';
-    } else {
-        victoryElement.textContent = 'Нічия!';
-    }
 }
 
 function playGame(playerChoice) {
     const computerChoice = getComputerChoice();
     showComputerChoice(computerChoice);
 
-    if (playerChoice === computerChoice) {
-        console.log('Нічия!');
-    } else if (
+    if (
         (playerChoice === "камінь" && computerChoice === "ножиці") ||
         (playerChoice === "ножиці" && computerChoice === "папір") ||
         (playerChoice === "папір" && computerChoice === "камінь")
     ) {
         console.log('Ви виграли раунд!');
         playerScore++;
+        victoryElement.textContent = 'Ви виграли раунд!';
+        victoryElement.classList.add('win');
+        victoryElement.classList.remove('lose');
     } else {
         console.log('Комп’ютер виграв раунд!');
         computerScore++;
+        victoryElement.textContent = 'Комп’ютер виграв раунд!';
+        victoryElement.classList.add('lose');
+        victoryElement.classList.remove('win');
     }
 
     updateScores();
