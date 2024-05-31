@@ -10,7 +10,7 @@ let computerPoint = 0;
 let userPoint = 0;
 
 function getComputerChoice() {
-    const stoneKnivesPapergame = ["камінь", "ножиці", "папір"]
+    const stoneScissorsPapergame = ["камінь", "ножиці", "папір"]
     const randomIndex = Math.floor(Math.random() * stoneScissorsPapergame.length);
     return stoneScissorsPapergame[randomIndex];
 }
@@ -20,11 +20,9 @@ function getPlayerChoice(choice) {
 }
 
 function showComputerChoice(choice) {
+    const choice = document.querySelector('.option')
     computer_option.textContent = `Комп вибрав: ${choice}`;
 }
-
-
-
 function playGame(playerChoice) {
     const computerChoice = getComputerChoice();
     showComputerChoice(computerChoice);
@@ -46,6 +44,21 @@ function playGame(playerChoice) {
     }
 
 }
+function updateScores(playerScore, computerScore) {
+    const playerElement = document.querySelector('.playerScore');
+    const computerElement = document.querySelector('.computerScore');
+    const victoryElement = document.querySelector('.victory');
+    playerElement.textContent = `Ви:- ${playerScore}`;
+    computerElement.textContent = `Комп'ютер- ${computerScore}`;
+    if (playerScore > computerScore) {
+        victoryElement.textContent = 'Ви перемогли!';
+    } else if (playerScore < computerScore) {
+        victoryElement.textContent = 'Ви програли!';
+    } else {
+        victoryElement.textContent = 'Нічия!';
+    }
+}
+
 
 imgOfStone.addEventListener('click', () => playGame('камінь'));
 imgOfScissors.addEventListener('click', () => playGame('ножиці'));
