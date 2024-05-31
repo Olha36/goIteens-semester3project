@@ -17,8 +17,6 @@ const links = document.querySelectorAll('a')
 
 const headerTexts = document.querySelectorAll('h2')   
 
-const textTags = ['paragraphs, links, headerTexts']
-
 function getClickCoordinates(event) {
     let newPositionLeft = event.clientX - footballField.getBoundingClientRect().left;
     console.log(newPositionLeft);
@@ -51,8 +49,8 @@ footballField.addEventListener('click', getClickCoordinates)
 function darkModeForPage() {
     sun.style.display = 'none'
     moon.style.display = 'block'
-    // textTags.forEach((textTag) => textTag.style.backgroundColor = 'red')
-    // paragraphs.style.color = '#FFFFFF';
-    body.style.color = '#000';
+    paragraphs.classList.add('make-text-white')
+    
+    
 }
 sun.addEventListener('click', darkModeForPage)

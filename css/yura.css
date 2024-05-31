@@ -68,6 +68,9 @@
 .moon {
   display: none;
 }
+.make-text-white {
+  color: #fff;
+}
 .welcome-user-text {
   margin-left: 15px;
 }
