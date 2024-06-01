@@ -71,6 +71,9 @@
 .make-text-white {
   color: #fff;
 }
+.linear-gradient-for-body {
+  background: linear-gradient(90deg, rgba(60,80,79,1) 30%, rgba(182,179,199,1) 83%);
+}
 .welcome-user-text {
   margin-left: 15px;
 }

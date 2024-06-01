@@ -11,11 +11,9 @@ const body = document.querySelector('body')
 
 const moon = document.querySelector('.moon')
 
-const paragraphs = document.querySelectorAll('p')
-
 const links = document.querySelectorAll('a')
 
-const headerTexts = document.querySelectorAll('h2')   
+const switcherButton = document.querySelector('.switcher-button')
 
 function getClickCoordinates(event) {
     let newPositionLeft = event.clientX - footballField.getBoundingClientRect().left;
@@ -50,7 +48,14 @@ function darkModeForPage() {
     sun.style.display = 'none'
     moon.style.display = 'block'
     body.classList.add('make-text-white')
-    
+    body.classList.add('linear-gradient-for-body')
+    links.forEach((text) => text.classList.add('make-text-white'))
+    switcherButton.style.marginLeft = '20px'
+    switcherButton.style.backgroundColor = '#000000'
+
+}
+function lightModeForPage() {
     
 }
 sun.addEventListener('click', darkModeForPage)
+moon.addEventListener('click', lightModeForPage)
