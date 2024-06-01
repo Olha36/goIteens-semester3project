@@ -35,9 +35,8 @@ button {
   background-image: url('../img-nazar/dinoimg.png');
   background-size: 30px 30px;
   top: 51px;
-  left: 600px;
+  left: 200px;
   border: 1px solid red;
-  /* animation: jump 0.5s linear infinite; */
 }
 
 .dinoJump {
@@ -83,12 +82,13 @@ button {
     top: 51px; 
   }
   50% {
-    top: -30px; 
+    top: -60px; /* Increased height to make the jump higher */
   }
   100% {
     top: 51px; 
   }
 }
+
 
 @keyframes block {
   0% { left: 100%; }

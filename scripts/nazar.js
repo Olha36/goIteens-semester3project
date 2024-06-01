@@ -8,28 +8,25 @@ let intervalID = null;
 
 function startGame() {
     if(!intervalID) {
-        intervalID = setInterval(getCoordinates, 10)
+        intervalID = setInterval(getCoordinates, 10);
     }
-    cactusRunning()
-    // console.log('running');
+   
+    cactusRunning();
 }
-// startGame()
 
 
 function stopGame() {
    if(intervalID) {
-    clearInterval(intervalID)
+    clearInterval(intervalID);
     intervalID = null;
    }
-   cactusImg.classList.remove('cactusRunning')
+   cactusImg.classList.remove('cactusRunning');
 }
-// stopGame()
 
 function dinoJump(e) {
     let key = e.key;
-    // console.log(key);
     if(key === 'Spacebar' || key === ' ') {
-        dinoImg.classList.add('dinoJump')
+        dinoImg.classList.add('dinoJump');
 
         setTimeout(() => {
             dinoImg.classList.remove('dinoJump')
@@ -42,30 +39,28 @@ function cactusRunning() {
     cactusImg.classList.add('cactusRunning');
   }
 }
-// cactusRunning()
 
 function getCoordinates() {
-    const dinoCoordinates = dinoImg.getBoundingClientRect()
-    const cactusCoordinates = cactusImg.getBoundingClientRect()
+    const dinoCoordinates = dinoImg.getBoundingClientRect();
+    const cactusCoordinates = cactusImg.getBoundingClientRect();
 
-    const isIntersectionX = cactusCoordinates.left < dinoCoordinates.right
-    const isIntersectionY = cactusCoordinates.top < dinoCoordinates.bottom
+    const isIntersectionX = cactusCoordinates.left < dinoCoordinates.right && cactusCoordinates.right > dinoCoordinates.left;
+    const isIntersectionY = cactusCoordinates.top < dinoCoordinates.bottom && cactusCoordinates.bottom > dinoCoordinates.top;
+    
     if (isIntersectionX && isIntersectionY) {
-        stopGame()
-        console.log('Finished');
         result.textContent = 'Finished game';
+        stopGame();  
+        startGameButton.setAttribute('disabled', 'true');
     }
-
 }
 
 function resetGame() {
-    stopGame()
-    startGame()
-    result.textContent = ''
+    stopGame();
+    startGame();
+    result.textContent = '';
 }
-resetGame()
 
 
-document.addEventListener('keydown', dinoJump)
-startGameButton.addEventListener('click', startGame)
-againGameButton.addEventListener('click', resetGame)
+document.addEventListener('keydown', dinoJump);
+startGameButton.addEventListener('click', startGame);
+againGameButton.addEventListener('click', resetGame);
