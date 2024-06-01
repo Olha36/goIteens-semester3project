@@ -32,7 +32,7 @@ button {
   width: 30px;
   height: 30px;
   position: relative;
-  background-image: url('../img-nazar/dinoimg.png');
+  background-image: url("../img-nazar/dinoimg.png");
   background-size: 30px 30px;
   top: 51px;
   left: 200px;
@@ -49,13 +49,13 @@ button {
   position: relative;
   top: 20px;
   left: 900px;
-  background-image: url('../img-nazar/cactus.png');
+  background-image: url("../img-nazar/cactus.png");
   background-size: 30px 30px;
   border: 1px solid blue;
 }
 
 .cactusRunning {
-  animation: block 2s  infinite linear;
+  animation: block 2s infinite linear;
 }
 
 .img {
@@ -79,18 +79,21 @@ button {
 
 @keyframes jump {
   0% {
-    top: 51px; 
+    top: 51px;
   }
   50% {
     top: -60px; /* Increased height to make the jump higher */
   }
   100% {
-    top: 51px; 
+    top: 51px;
   }
 }
 
-
 @keyframes block {
-  0% { left: 100%; }
-  100% { left: -20px; }       
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -20px;
+  }
 }
