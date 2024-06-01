@@ -61,7 +61,7 @@ function getCoordinates() {
 function resetGame() {
     stopGame()
     startGame()
-    result.textContent()
+    result.textContent = ''
 }
 resetGame()
 
