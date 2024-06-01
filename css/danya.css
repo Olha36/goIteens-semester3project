@@ -12,7 +12,9 @@
 }
 
 .partofcode {
-  display: flex;;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   margin: 20px 0;
 }
@@ -71,5 +73,11 @@
   .computer_option {
       padding: 8px 16px;
   
+  }
+}
+
+@media (max-width: 385px) {
+  .counter1 {
+    margin-left: 20px;
   }
 }
