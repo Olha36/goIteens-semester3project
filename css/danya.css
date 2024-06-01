@@ -19,6 +19,7 @@
 
 .img {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
 }
@@ -31,7 +32,7 @@
 }
 
 .counter1 {
-  margin-left: 75px;
+  margin-left: 70px;
   margin-bottom: 20px;
 }
     .win {
