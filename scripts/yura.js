@@ -55,7 +55,7 @@ function darkModeForPage() {
 
 }
 function lightModeForPage() {
-    
+    moon.removeEventListener('click', darkModeForPage)
 }
 sun.addEventListener('click', darkModeForPage)
 moon.addEventListener('click', lightModeForPage)
