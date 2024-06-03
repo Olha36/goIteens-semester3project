@@ -78,3 +78,33 @@
 
 2. З приводу твого питання по функції lightModeForPage:
 В тебе не працює тому, що ти додаєш обробник події з функцією darkModeForPage до елемента з сонечком, а потім намагаєшся забрати з місяця, а до місяця функція darkModeForPage  ніколи не була додана. Через це і проблема. Тут не вийде зробити 2 рядками. оведеться писати за аналогією darkModeForPage. Або трохи переписати логіку
+
+function toggleMode(isDarkMode) {
+    if (isDarkMode) {
+        sun.style.display = 'none';
+        moon.style.display = 'block';
+        body.classList.add('make-text-white', 'linear-gradient-for-body');
+        links.forEach((text) => text.classList.add('make-text-white'));
+        switcherButton.style.marginLeft = '20px';
+        switcherButton.style.backgroundColor = '#000000';
+        sun.removeEventListener('click', darkModeForPage);
+        moon.addEventListener('click', lightModeForPage);
+    } else {
+        sun.style.display = 'block';
+        moon.style.display = 'none';
+        body.classList.remove('make-text-white', 'linear-gradient-for-body');
+        links.forEach((text) => text.classList.remove('make-text-white'));
+        switcherButton.style.marginLeft = '0px';
+        switcherButton.style.backgroundColor = '#ffffff';
+        moon.removeEventListener('click', lightModeForPage);
+        sun.addEventListener('click', darkModeForPage);
+    }
+}
+
+function darkModeForPage() {
+    toggleMode(true);
+}
+
+function lightModeForPage() {
+    toggleMode(false);
+}
