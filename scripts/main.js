@@ -1,3 +1,4 @@
+import './swiper.js'
 import  './danya.js'
 import  './edward.js'
 import  './erik.js'
