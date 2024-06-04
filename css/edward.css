@@ -34,7 +34,7 @@ p{
   border-bottom-right-radius: 20px;
   margin-right: 275px;
 }
-img{
+.dandruff{
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -83,4 +83,50 @@ a{
 .send-email p{
   margin-top: 20px;
   font-size: 6px;
+}
+
+/* Modal */
+
+.modal{
+  width: 463px;
+  height: 245px;
+  border-radius: 25px;
+  border-width: 10px;
+  border-color: #000;
+  border: solid;
+}
+.cross{
+  cursor: pointer;
+}
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  background: black;
+  left: 95%;
+  bottom: 57%;
+}
+.cross:before {
+  transform: rotate(45deg);
+}
+.cross:after {
+  transform: rotate(-45deg);
+}
+
+.pictures{
+  display: flex;
+  justify-content: center;
+  margin-top: 69px;
+}
+.pictures h1{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.pictures img:first-of-type(2){
+  padding-right: 50px;
 }
