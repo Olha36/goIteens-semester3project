@@ -73,3 +73,5 @@ function darkModeForPage() {
 function lightModeForPage() {
     toggleSwitcherMode(false)
 }
+sun.addEventListener('click', darkModeForPage)
+moon.addEventListener('click', lightModeForPage)
