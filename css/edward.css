@@ -107,5 +107,19 @@ a{
 }
 .pictures img{
   position: absolute;
+}
+.sword {
+  bottom: 30px;
+  left: -50px;
+}
+.puzzle {
+  top: 36px;
+}
+.tic {
   top: 50px;
+  right: 40px;
+}
+.development {
+  bottom: 30px;
+  right: 40px;
 }
