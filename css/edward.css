@@ -97,8 +97,14 @@ a{
   background-color: grey;
   border-radius: 20px;
 }
+.pictures{
+  position: relative;
+}
 .pictures h1{
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
+}
+.pictures img{
+  position: absolute;
 }
