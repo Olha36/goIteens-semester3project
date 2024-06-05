@@ -12,11 +12,9 @@
   />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Проект 3 семестру</title>
 </head>
 <body>
@@ -163,7 +161,66 @@
     <!-- Ваня -->
   <div class="vanya"></div>
 
+
+  <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <h2 class="cards-title">Наша команда</h2>
+      <div class="cards-img">
+        <img src="" alt="">
+        <div class="cards-text">
+          <h3>Імена студентів</h3>
+          <p>Інформація про роботу</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-slide">Учень 1</div>
+
+    <div class="swiper-slide">Учень 2</div>
+
+    <div class="swiper-slide">Учень 3</div>
+
+    <div class="swiper-slide">Учень 4</div>
+
+    <div class="swiper-slide">Учень 5</div>
+
+    <div class="swiper-slide">Учень 6</div>
+
+    <div class="swiper-slide">
+        <h2 class="cards-title">Наша команда</h2>
+        <div class="cards-img">
+          <img src="./img-yura/cat-in-glasses.jpg" alt="cat-in-glasses" style="width: 150px; height: 150px;">
+          <div class="cards-text">
+            <h3>Юра</h3>
+            <p>
+              Я виконував частину проєкту "Футбол" та header. У цій частині мені потрібно було зробити, щоб
+              м'яч перекочувався на місце кліку.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    <div class="swiper-slide">Учень 8</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
   </main>
+
+
   <footer>
     <!-- Настя - наповнення футеру.  -->
     <!-- Даня - стилізація футеру.  -->
@@ -187,6 +244,7 @@
     </div>
   </footer>
 
+  <script src="./scripts/swiper-bundle.min.js"></script>
   <script src="./scripts/main.js" type="module"></script>
 </body>
 </html>

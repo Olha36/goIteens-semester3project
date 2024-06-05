@@ -1,0 +1,12 @@
+.swiper-slide {
+    text-align: center;
+}
+.cards-title {
+    margin-top: 40px;
+}
+.cards-title, .cards-img img, .cards-text h3 {
+    margin-bottom: 20px;
+}
+.cards-text p {
+    margin-bottom: 100px;
+}
