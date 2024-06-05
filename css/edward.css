@@ -107,4 +107,5 @@ a{
 }
 .pictures img{
   position: absolute;
+  top: 50px;
 }
