@@ -1,18 +1,9 @@
 const ballImg = document.querySelector('.football-img')
-console.log(ballImg);
-
 const footballField = document.querySelector('.football-field')
-console.log(footballField);
-
 const sun = document.querySelector('.sun')
-console.log(sun);
-
 const body = document.querySelector('body')
-
 const moon = document.querySelector('.moon')
-
 const links = document.querySelectorAll('a')
-
 const switcherButton = document.querySelector('.switcher-button')
 
 function getClickCoordinates(event) {
