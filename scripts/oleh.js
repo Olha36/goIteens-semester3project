@@ -13,10 +13,14 @@ function getRandomNumber() {
 };
 
 function getCheckNumbers() {
-const inputValue = numberGuess.value;
-console.log(inputValue);
-console.log('hoidht');
+    const inputValue = numberGuess.value;
+    console.log(inputValue);
+    console.log('hoidht');
+    if(inputValue == getRandomNumber()) {
+        alert('користувач виграв')
+    } else {
+        alert('користувач програв')
+    }
 }
-getCheckNumbers();
 
 numberGuess.addEventListener('focus', getCheckNumbers)

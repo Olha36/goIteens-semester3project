@@ -1,14 +1,28 @@
 .oleh{
-  height: 300px;
+  height: 100px;
   width: 600px;
   text-align: center;
   
 }
 input{
-  width: 300px;
-  height: 150px;
+  width: 115px;
+  height: 35px;
+  border-radius: 44px;
 }
 button{
   height: 100px;
   width: 150px;
+  border-radius: 94px;
+}
+img{
+  height: 35px;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.input{
+  display: flex;
+  align-items: center;
 }
