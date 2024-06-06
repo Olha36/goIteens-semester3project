@@ -67,7 +67,7 @@ a{
   border: none;
   background-color: #D7D7D7;
 }
-.send-email button{
+.subscribe-button{
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -79,6 +79,7 @@ a{
   border-radius: 20px;
   font-size: 12px;
   margin-left: 50px;
+  cursor: pointer;
 }
 .send-email p{
   margin-top: 20px;
@@ -86,6 +87,10 @@ a{
 }
 
 /* Modal */
+
+.active{
+  display: block;
+}
 
 
 .modal{
@@ -121,5 +126,26 @@ a{
 }
 .development {
   bottom: 30px;
-  right: 40px;
+  right: -15px;
+}
+
+.cross {
+  cursor: pointer;
+  position: relative;
+  top: -100px;
+  left: 280px;
+}
+.cross:before,
+.cross:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: black;
+}
+.cross:before {
+  transform: rotate(45deg);
+}
+.cross:after {
+  transform: rotate(-45deg);
 }
