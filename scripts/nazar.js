@@ -48,7 +48,7 @@ function getCoordinates() {
     const isIntersectionY = cactusCoordinates.top < dinoCoordinates.bottom && cactusCoordinates.bottom > dinoCoordinates.top;
     
     if (isIntersectionX && isIntersectionY) {
-        result.textContent = 'Finished game';
+        result.textContent = 'Гра завершена!';
         stopGame();  
         startGameButton.setAttribute('disabled', 'true');
     }
