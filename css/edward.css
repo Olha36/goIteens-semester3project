@@ -47,6 +47,7 @@ footer{
   justify-content: center;
   justify-content: space-around;
   align-items: center;
+  margin-top: 50px;
 }
 
 li{
@@ -60,7 +61,7 @@ a{
   text-decoration: none;
   color: #000;
 }
-.send-email input{
+.input{
   width: 350px;
   height: 35px;
   border-radius: 20px;
@@ -88,19 +89,22 @@ a{
 
 /* Modal */
 
-.active{
-  display: block;
-}
-
 
 .modal{
-  display: flex;
+  display: none;
+  position: absolute;
+  top: 30%;
   justify-content: center;
   align-items: center;
   width: 463px;
   height: 245px;
-  background-color: grey;
+  background-color: rgb(221, 216, 216);
   border-radius: 20px;
+  box-shadow: 1px 25px 20px rgb(10, 10, 10);
+}
+
+.active{
+  display: flex;
 }
 .pictures{
   position: relative;
@@ -142,10 +146,60 @@ a{
   width: 24px;
   height: 4px;
   background: black;
+  border-radius: 2px;
 }
 .cross:before {
   transform: rotate(45deg);
 }
 .cross:after {
   transform: rotate(-45deg);
+}
+
+
+@media screen and (max-width: 991px){
+  .subscribe-button{
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .input {
+    max-width: 100px;
+  }
+  .logo {
+    max-width: 100px;
+  }
+  footer ul li{
+    font-size: 6px;
+  }
+  .modal{
+    width: 200px;
+    height: 200px;
+  }
+  .modal h1 {
+    font-size: 13px;
+  }
+  .sword{
+    margin-left: 25px;
+  }
+  .cross{
+    left: 62%;
+    top: -40%;
+  }
+}
+
+@media screen and (max-width: 575px){
+  .adaptive {
+    max-width: 370px;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  .subscribe-button{
+    margin-top: 10px;
+  }
+  .input{
+    margin-left: 45px;
+  }
 }
