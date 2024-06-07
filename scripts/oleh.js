@@ -3,9 +3,6 @@ console.log(buttonPlayAgain);
 
 const numberGuess = document.querySelector(".number");
 console.log(numberGuess);
-
-const img = document.querySelector('.img');
-
  
 let number = getRandomNumber();
     
@@ -16,7 +13,7 @@ function getRandomNumber() {
 };
 
 function getCheckNumbers() {
-    let inputValue = numberGuess.value;
+    const inputValue = numberGuess.value;
     console.log(inputValue);
     console.log('hoidht');
     if(inputValue == getRandomNumber()) {
@@ -24,7 +21,6 @@ function getCheckNumbers() {
     } else {
         alert('користувач програв')
     }
-    numberGuess.value = ''
 }
 
-img.addEventListener('click', getCheckNumbers)
+numberGuess.addEventListener('focus', getCheckNumbers)
