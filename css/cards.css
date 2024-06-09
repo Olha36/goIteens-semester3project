@@ -10,3 +10,7 @@
 .cards-text p {
     margin-bottom: 100px;
 }
+.cards-img img {
+    width: 150px;
+    height: 150px;
+}

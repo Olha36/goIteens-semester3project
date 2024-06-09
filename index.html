@@ -17,15 +17,11 @@
 </head>
 <body>
   <header>
-    <!-- Ваня: наповнення хедеру: лого, лінки, дівка для світчера + вітання користувачу(пешка). -->
-    <!-- Юра - світчери -->
-    <!-- Ерік - модалка для інтерактиву -->
-    <!-- Едвард - модалка №1,  -->
-    <!-- Олег - модалка №2 -->
+  
     <div class="header flex">
       <div class="flex header-first-block justify-content-center">
         <div>
-          <img src="./img-yura/magic-wand.png" alt="magic-wand">
+          <img src="./img/img-yura/magic-wand.png" alt="magic-wand">
         </div>
 
         <div>
@@ -37,7 +33,7 @@
       <div class="flex nav-bar">
         <div class="flex">
           <a href="#" class="link">Інтерактив</a>
-          <img src="./img-yura/arrow.svg" alt="arrow">
+          <img src="./img/img-yura/arrow.svg" alt="arrow">
         </div>
         <a href="#" class="link">Наша команда</a>
         <a href="#" class="link">Контакти</a>
@@ -46,8 +42,8 @@
       <div class="flex">
         <div class="switcher">
           <span class="switcher-button flex justify-content-center">
-            <img class="sun" src="./img-yura/black-sun.svg" alt="sun">  
-            <img class="moon" src="./img-yura/white-moon.svg" alt="moon">
+            <img class="sun" src="./img/img-yura/black-sun.svg" alt="sun">  
+            <img class="moon" src="./img/img-yura/white-moon.svg" alt="moon">
           </span>
         </div>
 
@@ -76,9 +72,9 @@
 
     <div class="partofcode">
       <div class="img">
-        <img class="stone" src="/img-danya/stone jpg.jpg" alt="stone">
-        <img class="scissors" src="/img-danya/knives jpg.jpg" alt="knives">
-        <img class="paper" src="/img-danya/paper jpg.jpg" alt="paper">
+        <img class="stone" src="./img/img-danya/stone jpg.jpg" alt="stone">
+        <img class="scissors" src="./img/img-danya/knives jpg.jpg" alt="knives">
+        <img class="paper" src="./img/img-danya/paper jpg.jpg" alt="paper">
         </div>
      
         <div class="counter1">
@@ -93,7 +89,9 @@
    <p class="victory"></p>
 
 
-   <button class="computer_option"><p class="option">Варіант комп’ютера</p></button>
+    <button class="computer_option">
+      <p class="option">Варіант комп’ютера</p>
+    </button>
   </div>
 
 
@@ -113,7 +111,7 @@
      <div class="search-button-wrapper flex">
       <input id="input" type="number">
       <div class="resultButton">
-        <img src="./img-edward/Group 104.svg" alt="search">
+        <img src="./img/img-edward/Group 104.svg" alt="search">
       </div>
      </div>
       <p class="result"></p>
@@ -134,10 +132,8 @@
         <button class="againGameButton">Ще раз</button>
       </div>
       <p class="results"></p>
-      <div class="dinoImage">
-      </div>
-      <div class="cactusImage">
-      </div>
+      <div class="dinoImage"></div>
+      <div class="cactusImage"></div>
     </div>
   </div>
 
@@ -148,7 +144,7 @@
       <h2 class="football-title flex justify-content-center">Футбол</h2>
 
       <div class="football-field flex">
-        <img class="football-img" src="./img-yura/football.png" alt="football">
+        <img class="football-img" src="./img/img-yura/football.png" alt="football">
       </div>
     </div>
   </div>
@@ -181,7 +177,7 @@
     <div class="swiper-slide">
       <h2 class="cards-title">Наша команда</h2>
       <div class="cards-img">
-        <img src="./img-danya/danya.img.jpg" alt="cat-in-glasses" style="width: 150px; height: 150px;">
+        <img src="./img/img-danya/danya.img.jpg" alt="cat-in-glasses">
         <div class="cards-text">
           <h3>Данііл Щербаков</h3>
           <p>
@@ -195,10 +191,10 @@
 
     <div class="swiper-slide">Учень 4</div>
 
-    <div class="swiper-slide">Учень 5
+    <div class="swiper-slide">
       <h2 class="cards-title">Наша команда</h2>
       <div class="cards-img">
-        <img src="./img-edward/robot.png" alt="cat-in-glasses" style="width: 150px; height: 150px;">
+        <img src="./img/img-edward/robot.png" alt="cat-in-glasses">
         <div class="cards-text">
           <h3>Дудас Едуард</h3>
           <p>
@@ -211,7 +207,7 @@
     <div class="swiper-slide">
       <h2 class="cards-title">Наша команда</h2>
       <div class="cards-img">
-        <img class="robot" src="./img-nazar/photo1714318637.jpeg" alt="">
+        <img src="./img/img-nazar/photo1714318637.jpeg" alt="">
         <div class="cards-text">
           <h3>Назар</h3>
           <p>Зробив гру Google Динозавр, суть якої полягає у тому, щоб динозавр перестрибував кактус.</p>
@@ -222,7 +218,7 @@
     <div class="swiper-slide">
         <h2 class="cards-title">Наша команда</h2>
         <div class="cards-img">
-          <img src="./img-yura/cat-in-glasses.jpg" alt="cat-in-glasses" style="width: 150px; height: 150px;">
+          <img src="./img/img-yura/cat-in-glasses.jpg" alt="cat-in-glasses">
           <div class="cards-text">
             <h3>Юра</h3>
             <p>
@@ -251,11 +247,8 @@
 
 
   <footer>
-    <!-- Настя - наповнення футеру.  -->
-    <!-- Даня - стилізація футеру.  -->
-    <!-- Назар - підключення роботи джаваскрипта до футеру(при кліку на кнопку має висвічуватись модальне вікно “дякуємо за підписку(Олега)” -->
-
-    <img src="./img-edward/Group 128 1.svg" alt="logo">
+   
+    <img src="./img/img-edward/Group 128 1.svg" alt="logo">
     <div class="link-list">
       <ul>
         <li>Тел: <a href="#">+38 (123) 456 78 90</a></li>
