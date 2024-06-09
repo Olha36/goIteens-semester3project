@@ -2,7 +2,7 @@ const startGameButton = document.querySelector('.startGameButton')
 const againGameButton = document.querySelector('.againGameButton')
 const dinoImg = document.querySelector('.dinoImage')
 const cactusImg = document.querySelector('.cactusImage')
-const result = document.querySelector('.result')
+const result = document.querySelector('.results')
 
 let intervalID = null;
 
@@ -48,7 +48,7 @@ function getCoordinates() {
     const isIntersectionY = cactusCoordinates.top < dinoCoordinates.bottom && cactusCoordinates.bottom > dinoCoordinates.top;
     
     if (isIntersectionX && isIntersectionY) {
-        result.textContent = 'Finished game';
+        result.textContent = 'Гра завершена!';
         stopGame();  
         startGameButton.setAttribute('disabled', 'true');
     }
