@@ -74,6 +74,11 @@ button {
   border-radius: 5px;
 }
 
+.robot {
+  width: 150px;
+  height: 150px;
+}
+
 @media screen and (max-width: 300px) {
   .startGameButton {
     margin: 10px 0;
