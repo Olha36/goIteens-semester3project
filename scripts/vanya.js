@@ -1,16 +1,17 @@
-console.log('Vanya');
-const InputFirstNumber = document.querySelector(".first_number")
-const ImputSecondNumber = document.querySelector(".second_number") 
-const InputThirdNumber = document.querySelector(".third_number")
-const Button = document.querySelector("button")
-const PHighestNumber = document.querySelector("p")
-function getRandomNumber() {
-    return Math.random();
-}
-document.getElementById('button').addEventListener('click', function() {
-    const input = document.getElementsByClassName(".first_number").value;
-    const input2 = document.getElementsByClassName(".second_number").value;
-    const input3 = document.getElementsByClassName(".third_number").value;
-    
-    showBiggestNumber(numbers);
+const inputFirstNumber = document.querySelector(".first_number")
+const inputSecondNumber = document.querySelector(".second_number") 
+const inputThirdNumber = document.querySelector(".third_number")
+const button = document.querySelector("button")
+const highestNumber = document.querySelector(".result")
+
+document.getElementById('check').addEventListener('click', function() {
+    let input = Number.parseInt(inputFirstNumber.value);
+    let input2 = Number.parseInt(inputSecondNumber.value);
+    let input3 = Number.parseInt(inputThirdNumber.value);
+    const maxNumber = Math.max(input, input2, input3)
+    console.log(maxNumber);
+    highestNumber.textContent = `${maxNumber}`
+    inputFirstNumber.value = '';
+    inputSecondNumber.value = '';
+    inputThirdNumber.value = '';
 });
