@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 .flex {
   display: flex;
 }
@@ -128,4 +126,4 @@
     transform: translate(var(--x), var(--y)) rotate(var(--angle));
   }
 }
->>>>>>> feature/card-vanya
+

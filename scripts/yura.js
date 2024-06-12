@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 const ballImg = document.querySelector('.football-img')
 console.log(ballImg);
 
@@ -61,4 +59,4 @@ function lightModeForPage() {
 }
 sun.addEventListener('click', darkModeForPage)
 moon.addEventListener('click', lightModeForPage)
->>>>>>> feature/card-vanya
+
