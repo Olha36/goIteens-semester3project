@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const inputFirstNumber = document.querySelector(".first_number")
 const inputSecondNumber = document.querySelector(".second_number") 
 const inputThirdNumber = document.querySelector(".third_number")
@@ -15,3 +16,5 @@ document.getElementById('check').addEventListener('click', function() {
     inputSecondNumber.value = '';
     inputThirdNumber.value = '';
 });
+=======
+>>>>>>> feature/card-vanya
