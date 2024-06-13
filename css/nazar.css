@@ -5,8 +5,7 @@ h2 {
   margin-top: 15px;
   font-family: "Open Sans", sans-serif;
 }
-
-button {
+.buttonColor {
   width: 150px;
   height: 50px;
   color: white;
