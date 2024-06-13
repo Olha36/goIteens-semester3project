@@ -2,12 +2,12 @@
   height: 100px;
   width: 600px;
   text-align: center;
-  
+  background-color: red;
 }
 input{
-  width: 115px;
-  height: 35px;
-  border-radius: 44px;
+  border-radius: 20px 0 0 20px;
+width: 215px;
+height: 29px;
 }
 button{
   height: 100px;

@@ -1,6 +1,8 @@
 const buttonPlayAgain = document.querySelector(".button");
 console.log(buttonPlayAgain);
 
+const search = document.querySelector('img');
+
 const numberGuess = document.querySelector(".number");
 console.log(numberGuess);
  
@@ -21,6 +23,7 @@ function getCheckNumbers() {
     } else {
         alert('користувач програв')
     }
+    numberGuess.value = ''
 }
 
-numberGuess.addEventListener('focus', getCheckNumbers)
+search.addEventListener('click', getCheckNumbers)
