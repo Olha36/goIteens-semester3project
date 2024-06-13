@@ -1,3 +1,6 @@
+@import './reset.css';
+@import './swiper-bundle.min.css';
+@import './cards.css';
 @import './danya.css';
 @import './edward.css';
 @import './erik.css';
@@ -6,5 +9,3 @@
 @import './oleh.css';
 @import './vanya.css';
 @import './yura.css';
-
-/* Тут будемо писати стилі разом. В цьому файлі ПОКИ що НІЧОГО не пишіть! */
