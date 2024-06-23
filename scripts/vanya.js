@@ -2,7 +2,7 @@ const inputFirstNumber = document.querySelector(".first_number")
 const inputSecondNumber = document.querySelector(".second_number") 
 const inputThirdNumber = document.querySelector(".third_number")
 const button = document.querySelector("button")
-const highestNumber = document.querySelector(".result")
+const highestNumber = document.querySelector(".result-highest")
 
 document.getElementById('check').addEventListener('click', function() {
     let input = Number.parseInt(inputFirstNumber.value);
@@ -15,4 +15,3 @@ document.getElementById('check').addEventListener('click', function() {
     inputSecondNumber.value = '';
     inputThirdNumber.value = '';
 });
-
