@@ -1,0 +1,50 @@
+.nastya {
+  width: 629px;
+  height: 116px;
+  top: 853px;
+  left: 405px;
+  radius: 20px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.title_nastya {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.btn_number1_nastya {
+  background: rgba(215, 215, 215, 1);
+  width: 135px;
+  height: 35px;
+  border-radius: 20px;
+  padding: 10px, 20px, 10px, 20px;
+}
+
+.btn_cal_nastya {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc_block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.oper_block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.oper_block_row {
+  display: flex;
+  gap: 8px;
+}
