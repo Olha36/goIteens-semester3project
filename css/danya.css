@@ -1,3 +1,4 @@
+
 .danya {
   display: flex;
   flex-direction: column;
@@ -36,21 +37,21 @@
   margin-left: 70px;
   margin-bottom: 20px;
 }
-.win {
-  margin-top: 50px;
-    color: green;
-    margin-bottom: 50px;
-}
-.lose {
-  margin-top: 50px;
-    color: red;
-    margin-bottom: 50px;
-}
-.draw{
-  margin-top: 50px;
-  color: #000;
-  margin-bottom: 50px;
-}
+    .win {
+      margin-top: 50px;
+        color: green;
+        margin-bottom: 50px;
+    }
+    .lose {
+      margin-top: 50px;
+        color: red;
+        margin-bottom: 50px;
+    }
+    .draw{
+      margin-top: 50px;
+      color: #000;
+      margin-bottom: 50px;
+    }
 .computer_option {
   background-color: #000;
   color: #fff;
@@ -80,5 +81,3 @@
     margin-left: 20px;
   }
 }
-
- 

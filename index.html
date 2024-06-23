@@ -60,7 +60,13 @@
   
 
     <!-- Олег -->
-  <div class="oleh"></div>
+    <div class="oleh">
+      <h2>Вгадайте число!</h2>
+      <div class="flex">
+      <div class="input"><input class="number" type="number" placeholder="Введіть число">
+        <img src="Frame105.png" alt="Frame105"></div>
+      </div>
+    </div>
 
 
 
@@ -98,7 +104,28 @@
 
 
     <!-- Настя -->
-  <div class="nastya"></div>
+    <div class="nastya">
+      <h2 class="title_nastya">Калькулятор</h2>
+      <div class="calc_block">
+        <input type="number" class="btn_number1_nastya" placeholder="Введить число" id="numm_1"></input>
+        <div class="oper_block">
+  
+          <div class="oper_block_row">
+            <button class="btn_cal_nastya" id="plus">+</button>
+            <button class="btn_cal_nastya"  id="minus">-</button>
+          </div>
+          <div class="oper_block_row">
+            <button class="btn_cal_nastya"  id="sub">/</button>
+            <button class="btn_cal_nastya"  id="mul">*</button>
+          </div>
+  
+        </div>
+        <input type="number" class="btn_number1_nastya" placeholder="Введить число" id="numm_2">
+        <button class="btn_cal_nastya" id="calc">=</button>
+        <input type="number" class="btn_number1_nastya" placeholder="Результат" id="result">
+        <button class="btn_cal_nastya"  id="clear">C</button>
+      </div>
+    </div>
 
 
 
@@ -151,7 +178,19 @@
 
 
     <!-- Ваня -->
-  <div class="vanya"></div>
+    <div class="vanya">
+      <div class="h2">
+        <h2>Введіть 3 числа</h2>
+      </div>
+      <div class="input-vanya">
+        <input class="first_number" type="number" placeholder="Введіть число">
+        <input class="second_number" type="number" placeholder="Введіть число">
+        <input class="third_number" type="number" placeholder="Введіть число">
+      </div>
+      <button id="check">Перевірити</button>
+      <p>Найбільше число, яке ви ввели - ( <span class="result">число</span>)</p>
+  
+    </div>
 
 
   <!-- Slider main container -->
@@ -170,7 +209,15 @@
       </div>
     </div>
 
-    <div class="swiper-slide">Учень 1</div>
+    <div class="swiper-slide">
+      <h2 class="cards-title">Наша команда</h2>
+      <img src="" alt="" class="cards-img">
+      <div class="cards-text">
+        <h3>Олег</h3>
+        <p>Зробив гру 'Відгадай число'. Це гра в якій тобі потрібно відгадати число яке загадав комп'ютер від одного до десяти</p>
+      </div>
+      
+    </div>
 
     <div class="swiper-slide">Учень 2</div>
 
@@ -189,7 +236,18 @@
 
   
 
-    <div class="swiper-slide">Учень 4</div>
+    <div class="swiper-slide">
+      <h3 class="cards-title">Наша команда</h3>
+      <img src="./goIteens-semester3project/img-nastya/photo_2024-06-13_12-34-05.jpg" alt="nastya" class="cards-img">
+
+      <div class="cards-text">
+        <h2>Anastasiia Zavadska</h2>
+        <p>Під час роботи над цим проектом, я займалася частиною, результатом якої став калькулятор, 
+           що може здійснювати прості арифметичні обчислення.
+        </p>
+      </div>
+      
+  </div>
 
     <div class="swiper-slide">
       <h2 class="cards-title">Наша команда</h2>
@@ -229,7 +287,16 @@
         </div>
       </div>
 
-    <div class="swiper-slide">Учень 8</div>
+      <div class="swiper-slide">
+        <h2 class="cards-title">Наша команда</h2>
+        <div class="cards-img">
+          <img class="imgvanya" src="https://pm1.aminoapps.com/7359/120a79da5646d840006639cfba34ad144e228341r1-752-768v2_00.jpg" alt="">
+          <div class="cards-text">
+            <h3>Ivan Valchuk</h3>
+            <p class="job_done">Введи три числа</p>
+          </div>
+        </div>
+      </div>
     ...
   </div>
   <!-- If we need pagination -->

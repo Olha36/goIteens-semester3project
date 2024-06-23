@@ -34,11 +34,13 @@ function playGame(playerChoice) {
         (playerChoice === "ножиці" && computerChoice === "папір") ||
         (playerChoice === "папір" && computerChoice === "камінь")
     ) {
+        console.log('Ви виграли раунд!');
         playerScore++;
         victoryElement.textContent = 'Ви виграли раунд!';
         victoryElement.classList.add('win');
         victoryElement.classList.remove('lose', 'draw');
     } else if (playerChoice === computerChoice) {
+        console.log('Нічия!');
         victoryElement.textContent = 'Нічия!';
         victoryElement.classList.add('draw');
         victoryElement.classList.remove('win', 'lose');

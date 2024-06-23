@@ -1,9 +1,18 @@
 const ballImg = document.querySelector('.football-img')
+console.log(ballImg);
+
 const footballField = document.querySelector('.football-field')
+console.log(footballField);
+
 const sun = document.querySelector('.sun')
+console.log(sun);
+
 const body = document.querySelector('body')
+
 const moon = document.querySelector('.moon')
+
 const links = document.querySelectorAll('a')
+
 const switcherButton = document.querySelector('.switcher-button')
 
 function getClickCoordinates(event) {
@@ -35,34 +44,18 @@ function getClickCoordinates(event) {
 }
 footballField.addEventListener('click', getClickCoordinates)
 
-function toggleSwitcherMode(isDarkMode) {
-    if (isDarkMode) {
-        sun.style.display = 'none'
-        moon.style.display = 'block'
-        body.classList.add('make-text-white')
-        body.classList.add('linear-gradient-for-body')
-        links.forEach((text) => text.classList.add('make-text-white'))
-        switcherButton.style.marginLeft = '20px'
-        switcherButton.style.backgroundColor = '#000000'
-        sun.removeEventListener('click', darkModeForPage)
-        moon.addEventListener('click', lightModeForPage)
-    } else {
-        sun.style.display = 'block'
-        moon.style.display = 'none'
-        body.classList.remove('make-text-white')
-        body.classList.remove('linear-gradient-for-body')
-        links.forEach((text) => text.classList.remove('make-text-white'))
-        switcherButton.style.marginLeft = '0px'
-        switcherButton.style.backgroundColor = '#ffffff'
-        moon.removeEventListener('click', lightModeForPage)
-        sun.addEventListener('click', darkModeForPage)
-    }
-}
 function darkModeForPage() {
-    toggleSwitcherMode(true)
+    sun.style.display = 'none'
+    moon.style.display = 'block'
+    body.classList.add('make-text-white')
+    body.classList.add('linear-gradient-for-body')
+    links.forEach((text) => text.classList.add('make-text-white'))
+    switcherButton.style.marginLeft = '20px'
+    switcherButton.style.backgroundColor = '#000000'
+
 }
 function lightModeForPage() {
-    toggleSwitcherMode(false)
+    
 }
 sun.addEventListener('click', darkModeForPage)
 moon.addEventListener('click', lightModeForPage)
